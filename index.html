@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean Service</title>
+  <meta name="description" content="Clean Service - Services de nettoyage professionnels, rapides et fiables à Pointe-Noire. Bureaux, résidences, commerces et plus.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#accueil" class="logo-container">
+      <img src="C:\Users\Geo\Pictures\cae.PNG" alt="Clean Service Logo" class="logo">
+      <div class="logo-text">
+        <h1>Clean Service</h1>
+      </div>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-bg">
+        <!-- Images et vidéo -->
+        <img src="C:\Users\Geo\Pictures\Clean service\Snapchat-2124433768.jpg" class="slide active" alt="Nettoyage bureaux">
+        <video class="slide" autoplay muted loop playsinline>
+          <source src="C:\Users\Geo\Pictures\Clean service\Snapchat-599923498.mp4" type="video/mp4">
+          <p class="video-fallback">⚠️ Vidéo non disponible. Veuillez recharger la page.</p>
+        </video>
+        <img src="C:\Users\Geo\Pictures\Clean service\Snapchat-807297425.jpg" class="slide" alt="Entretien résidences">
+        <img src="C:\Users\Geo\Pictures\Clean service\Snapchat-700809379.jpg" class="slide" alt="Nettoyage après travaux">
+      </div>
+      <div class="hero-content">
+        <h1>Bienvenue chez Clean Service</h1>
+          <h2>Des services de nettoyage professionnels, rapides et fiables.</h2>
+            <p>Nous rendons vos espaces propres, sains et agréables.</p>
+        <a href="#services" class="btn">Découvrir nos services</a>
+      </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services-section">
+      <h2>Nos Services</h2>
+      <div class="services-container">
+        <div class="service-item">
+          <h3>Nettoyage de bureaux</h3>
+          <p>Un environnement de travail propre et sain pour plus de productivité.</p>
+        </div>
+        <div class="service-item">
+          <h3>Entretien de résidences</h3>
+          <p>Nous faisons briller vos maisons du sol au plafond.</p>
+        </div>
+        <div class="service-item">
+          <h3>Nettoyage après travaux</h3>
+          <p>Débarrassez-vous des résidus de chantier en toute tranquillité.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="about-section">
+      <div class="about-content">
+        <h2>À propos de Clean Service</h2>
+        <p>
+          Clean Service est une entreprise spécialisée dans le nettoyage professionnel de bureaux, maisons, commerces et autres espaces.
+          Notre équipe qualifiée assure un service rapide, discret et efficace. Avec nous, vos locaux respirent la propreté.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contactez-nous</h2>
+      <div class="contact-infos">
+        <p><strong>Téléphone :</strong> ‪+242 06 568 81 19‬</p>
+        <p><strong>Email :</strong> cleanservice542@gmail.com</p>
+        <p><strong>Adresse :</strong> Pointe-Noire, République du Congo</p>
+        <p>
+          <strong>Réseaux :</strong>
+          <a href="https://www.facebook.com/profile.php?id=61562286655117">Facebook</a> |
+          <a href="https://www.instagram.com/clean_service242/">Instagram</a> |
+          <a href="https://www.tiktok.com/@cleanservice242?_t=ZM-8zQqKClQha2&_r=1">TikTok</a> 
+        </p>
+      </div>
+      <form class="contact-form" method="POST" action="#">
+        <input type="text" name="name" placeholder="Nom" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Votre message..." rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Stuart Tech. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Bouton retour haut -->
+  <a href="#" class="scroll-to-top">↑</a>
+
+  <script>
+  const slides = document.querySelectorAll(".slide");
+  let current = 0;
+
+  function showNextSlide() {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+  }
+
+  // Change toutes les 6 secondes
+  setInterval(showNextSlide, 6000);
+</script>
+</body>
+</html>

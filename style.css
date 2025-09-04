@@ -1,0 +1,331 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ========== HEADER ========== */
+
+header {
+  background-color: #1e90ff;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column; /* empile logo et menu */
+  align-items: center;
+}
+
+.logo-container {
+  align-self: flex-start; /* force logo + h1 à gauche */
+  flex-direction: column; /* empile logo et texte */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.logo-text h1 {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+}
+
+.logo-container h1 {
+  font-size: 22px;
+  color: white;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffc107;
+}
+
+/* ========== HERO (background slider / vidéo) ========== */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -2;
+}
+
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0f70d1;
+}
+
+/* ========== SERVICES ========== */
+.services-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.services-section h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #333;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-item {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item h3 {
+  color: #1e90ff;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* ========== ABOUT ========== */
+.about-section {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* ========== CONTACT ========== */
+.contact-section {
+  background-color: #111;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-infos p, .contact-infos a {
+  margin: 8px 0;
+  color: #ccc;
+}
+
+.contact-infos a:hover {
+  color: #1e90ff;
+}
+
+.contact-form {
+  margin-top: 30px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0077cc;
+  transform: scale(1.05);
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e90ff;
+  color: white;
+  margin-top: 30px;
+}
+
+/* ========== SCROLL TO TOP ========== */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background-color: #0b68c1;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablette (max 768px) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobile (max 480px) */
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .service-item {
+    width: 90%;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
