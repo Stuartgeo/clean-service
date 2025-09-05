@@ -93,7 +93,7 @@ nav ul {
     display: flex;
   }
 nav ul li a {
-    color: white;
+    color: #333;
     padding: 8px 0;
     width: 100%;
   }
