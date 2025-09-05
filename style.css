@@ -71,24 +71,36 @@ nav ul {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 20;
   }
-nav ul {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #007bff;
-  position: absolute;
-  top: 60px;
-  right: 10px;
-  padding: 10px 20px;
-  display: none;
-  z-index: 10;
-}
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    transition: all 0.3s ease;
+  }
   nav ul.active {
     display: flex;
   }
+nav ul li a {
+    color: #333;
+    padding: 8px 0;
+    width: 100%;
+  }
+  nav ul li a:hover {
+    color: #007bff;
+  }
 }
-
 
 nav a {
   color: white;
