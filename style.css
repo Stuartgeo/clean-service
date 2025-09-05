@@ -51,12 +51,44 @@ header {
   margin: 0;
 }
 
+/* Style du bouton burger */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 30px;
 }
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+nav ul {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #007bff;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  padding: 10px 20px;
+  display: none;
+  z-index: 10;
+}
+  nav ul.active {
+    display: flex;
+  }
+}
+
 
 nav a {
   color: white;
