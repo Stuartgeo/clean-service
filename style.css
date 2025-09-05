@@ -97,8 +97,9 @@ nav ul li a {
     padding: 8px 0;
     width: 100%;
   }
+
   nav ul li a:hover {
-    color: #1e90ff;
+    color: #007bff;
   }
 }
 
