@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clean Service — Nos services</title>
+  <link rel="stylesheet" href="pierre.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+  <div class="header-inner">
+    <a href="#accueil" class="logo-container">
+      <img src="cae.jpeg" alt="Clean Service Logo" class="logo" />
+      <h1 class="brand">Clean Service</h1>
+    </a>
+
+    <!-- Bouton burger (visible mobile) -->
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span class="bar" aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav class="main-nav" role="navigation">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Bouton remonter -->
+<a href="#" class="scroll-to-top" aria-label="Remonter en haut">▲</a>
+
+
+  <!-- HERO -->
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-bg">
+        <!-- Images et vidéo -->
+        <img src="Snapi1.jpg" class="slide active" alt="Nettoyage bureaux">
+        <video class="slide" autoplay muted loop playsinline>
+          <source src="video1.mp4" type="video/mp4">
+          <p class="video-fallback">⚠️ Vidéo non disponible. Veuillez recharger la page.</p>
+        </video>
+        <img src="Snapi2.jpg" class="slide" alt="Entretien résidences">
+        <img src="Snapi3.jpg" class="slide" alt="Nettoyage après travaux">
+      </div>
+      <div class="hero-content">
+        <h1>Bienvenue chez Clean Service</h1>
+          <h2>Des services de nettoyage professionnels, rapides et fiables.</h2>
+            <p>Votre partenaire pour un nettoyage impéccable !</p>
+        <a href="#services" class="btn">Découvrir nos services</a>
+      </div>
+    </section>
+
+    <!-- VITRINE (3 services empilés) -->
+    <section id="services" class="services-vitrine" aria-labelledby="services-title">
+      <div class="services-header">
+        <h2 id="services-title">Nos services</h2>
+        <button id="open-services-modal" class="btn">En savoir plus</button>
+      </div>
+
+      <!-- Vitrine: 3 blocs (texte à gauche / image à droite) -->
+      <article class="service vitrine-item bg-blue reveal">
+        <div class="service-text">
+          <h2>Nettoyage de maisons</h2>
+          <p>Nous proposons un service complet de nettoyage pour les maisons : sols, vitres, murs, sanitaires, cuisines, etc. Que ce soit pour un nettoyage ponctuel ou régulier, nous assurons un travail soigné, rapide et efficace.</p>
+          <ul>
+            <li>Produits adaptés et non toxiques.</li>
+            <li>Respect de vos objets personnels.</li>
+            <li>Intervention discrète et professionnelle.</li>
+          </ul>
+        </div>
+        <div class="service-image">
+          <img src="Snapi5.jpg" alt="Nettoyage de maisons" />
+        </div>
+      </article>
+
+      <article class="service vitrine-item bg-white reveal">
+        <div class="service-text">
+          <h2>Nettoyage de bureaux et commerces</h2>
+          <p>Maintenez un environnement de travail propre et agréable grâce à nos prestations adaptées aux bureaux, boutiques, hôtels, salons de coiffure, etc.</p>
+          <ul>
+            <li>Flexibilité (en dehors des heures de travail).</li>
+            <li>Nettoyage de sols, vitres, meubles, équipements.</li>
+            <li>Tarifs adaptés aux professionnels.</li>
+          </ul>
+        </div>
+        <div class="service-image">
+          <img src="Snapi6.jpeg" alt="Nettoyage de bureaux et commerces" />
+        </div>
+      </article>
+
+      <article class="service vitrine-item bg-blue reveal">
+        <div class="service-text">
+          <h2>Conception & installation de baies vitrées</h2>
+          <p>Clean Service vous accompagne dans la conception sur mesure et l’installation professionnelle de baies vitrées pour maisons, bureaux et locaux commerciaux.</p>
+          <p>Nous étudions votre espace, vos besoins et vos préférences esthétiques pour créer une solution qui allie lumière, sécurité et élégance.</p>
+          <ul>
+            <li>Étude personnalisée et conseils techniques.</li>
+            <li>Conception sur mesure (dimensions, matériaux, design).</li>
+            <li>Pose professionnelle et finitions propres.</li>
+            <li>Produits résistants et adaptés au climat.</li>
+            <li>Amélioration de la luminosité, de l’esthétique et de l’isolation.</li>
+          </ul>
+        </div>
+        <div class="service-image">
+          <img src="Snapi7.jpg" alt="Baies vitrées" />
+        </div>
+      </article>
+    </section>
+
+    <!-- A PROPOS -->
+    <section id="apropos" class="apropro">
+  <div class="apro-bg">
+    <div class="apro-wrap">
+
+      <header class="apro-top">
+        <div>
+          <h2>À propos de Clean Service</h2>
+          <p class="lead">Professionnalisme, fiabilité et respect — du premier contact à la finition.</p>
+        </div>
+        <div class="apro-hero-image">
+          <img src="Snapi13.jpg" alt="Notre équipe Clean Service">
+        </div>
+      </header>
+
+      <!-- card contenant les infos principales -->
+      <div class="apro-card">
+        <div class="apro-left">
+          <!-- chiffres clés -->
+          <div class="stats compact">
+            <div class="stat">
+              <div class="stat-value">1+</div>
+              <div class="stat-label">ans d'expérience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">40+</div>
+              <div class="stat-label">interventions</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">98%</div>
+              <div class="stat-label">clients satisfaits</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">Equipe</div>
+              <div class="stat-label">formée & certifiée</div>
+            </div>
+          </div>
+
+          <!-- Mission, Vision -->
+          <div class="mv-grid">
+            <div class="mv-item">
+              <h3>Notre mission</h3>
+              <p>Face au manque de services de nettoyage fiables et modernes dans la ville, ils ont décidé de créer Clean Service pour répondre aux besoins des particuliers, entreprises et institutions, avec des prestations personnalisées et efficaces.</p>
+            </div>
+            <div class="mv-item">
+              <h3>Notre vision</h3>
+              <p>Depuis sa création, Clean Service s’est engagé à offrir des services de nettoyage professionnel (maisons, bureaux, locaux, chantiers), la mise à disposition d’agents d’entretien, l’installation de baies vitrées, ainsi que des travaux dans le bâtiment avec pour objectif : améliorer le confort, l’image et l’hygiène de ses clients.</p>
+            </div>
+          </div>
+
+          <!-- Pourquoi nous choisir -->
+          <div class="why highlight">
+            <h3>Pourquoi nous choisir ?</h3>
+            <ul>
+              <li><strong>Expertise prouvée.</strong> Equipe formée et contrôles qualité.</li>
+              <li><strong>Respect des délai.</strong> Interventions ponctuelles ou régulières, horaires adaptés.</li>
+              <li><strong>Produits & matériels.</strong> Solutions efficaces et respectueuses de l'environnement.</li>
+              <li><strong>Sécurité.</strong> Personnel recruté, assuré et encadré.</li>
+            </ul>
+          </div>
+
+          <!-- CTA -->
+          <div class="apro-cta">
+            <button class="btn primary" id="contact-cta">Demandez un devis</button>
+          </div>
+        </div>
+
+        <!-- colonne droite : image ou citation -->
+        <aside class="apro-right">
+          <blockquote class="apro-quote">
+            <p>« Service rapide, équipe professionnelle — locaux impeccables après chaque intervention. »</p>
+            <cite>— Client satisfait</cite>
+          </blockquote>
+
+          <!-- Optionnel : petite galerie / 2 images -->
+          <div class="mini-gallery">
+            <img src="Snapi14.jpg" alt="Intervention Clean Service">
+            <img src="Snapi15.jpg" alt="Intervention Clean Service">
+          </div>
+        </aside>
+      </div> <!-- .apro-card -->
+
+    </div> <!-- .apro-wrap -->
+  </div> <!-- .apro-bg -->
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <h2>Contactez-nous</h2>
+      <div class="contact-infos">
+        <p><strong>Téléphone :</strong> ‪+242 06 568 81 19‬</p>
+        <p><strong>Email :</strong> cleanservice542@gmail.com</p>
+        <p><strong>Adresse :</strong> Pointe-Noire, République du Congo</p>
+        <p>
+          <strong>Réseaux :</strong>
+          <a href="https://www.facebook.com/profile.php?id=61562286655117">Facebook</a> |
+          <a href="https://www.instagram.com/clean_service242/">Instagram</a> |
+          <a href="https://www.tiktok.com/@cleanservice242?_t=ZM-8zQqKClQha2&_r=1">TikTok</a> 
+        </p>
+      </div>
+      <form class="contact-form" method="POST" action="#">
+        <input type="text" name="name" placeholder="Nom" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Votre message..." rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Clean Service. Tous droits réservés.</p>
+  </footer>
+
+  <!-- MODAL : TOUS LES SERVICES (scroll interne) -->
+  <div id="services-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="services-modal-title">
+    <div class="modal__backdrop" data-modal-close></div>
+
+    <div class="modal__panel" role="document" aria-modal="true">
+      <button class="modal__close" aria-label="Fermer" data-modal-close>×</button>
+      <h2 id="services-modal-title">Nos services — détails</h2>
+
+      <div class="modal-services">
+        <!-- Répète/ajoute autant de services que tu veux -->
+        <article class="service modal-item bg-blue reveal">
+          <div class="service-text">
+            <h2>Nettoyage d’ameublement (canapés, tapis, rideaux…)</h2>
+            <p>Nous nettoyons en profondeur vos meubles textiles pour éliminer la poussière, les taches, les mauvaises odeurs et les acariens.</p>
+            <ul>
+              <li>Canapés en tissu ou cuir.</li>
+              <li>Tapis, moquettes, rideaux.</li>
+              <li>Nettoyage à sec ou par injection-extraction selon le type de tissu.</li>
+              <li>Résultat propre, frais et durable.</li>
+            </ul>
+          </div>
+          <div class="service-image">
+            <img src="Snapi8.jpeg" alt="Nettoyage d’ameublement" />
+          </div>
+        </article>
+
+        <article class="service modal-item bg-white reverse">
+          <div class="service-text">
+            <h2>Nettoyage après travaux/chantiers</h2>
+            <p>Nous intervenons pour nettoyer en profondeur vos locaux après construction ou rénovation.</p>
+            <ul>
+              <li>Enlèvement de poussière, gravats, traces de peinture</li>
+              <li>Finitions soignées</li>
+              <li>Intervention rapide avant remise des clés</li>
+            </ul>
+          </div>
+          <div class="service-image">
+            <img src="Snapi3.jpg" alt="Nettoyage après travaux" />
+          </div>
+        </article>
+
+        <article class="service modal-item bg-blue reveal">
+          <div class="service-text">
+            <h2>Conception et installation de baies vitrées</h2>
+            <p>Nous étudions votre espace, vos besoins et vos préférences esthétiques pour créer une solution qui allie lumière, sécurité et élégance.</p>
+            <ul>
+              <li>Étude personnalisée et conseils techniques</li>
+              <li>Conception sur mesure (dimensions, matériaux, design)</li>
+              <li>Pose professionnelle et finitions propres</li>
+              <li>Produits résistants et adaptés au climat</li>
+              <li>Amélioration de la luminosité, de l’esthétique et de l’isolation</li>
+            </ul>
+          </div>
+          <div class="service-image">
+            <img src="Snapi9.jpg" alt="Baies vitrées" />
+          </div>
+        </article>
+
+        <article class="service modal-item bg-white reverse">
+          <div class="service-text">
+            <h2>Service de baby-sitting à domicile</h2>
+            <p>Clean Service vous propose un service de garde d’enfants à domicile, assuré par des personnes de confiance, patientes, expérimentées et formées pour s’occuper des tout-petits comme des plus grands.</p>
+            <p>Que ce soit pour quelques heures, en soirée, pendant le week-end ou de façon régulière, nous mettons à votre disposition des nounous sérieuses et attentionnées, à Pointe-Noire.</p>
+            <ul>
+                <li>Garde à domicile en toute sécurité</li>
+                <li>Activités ludiques et éducatives</li>
+                <li>Adapté à vos horaires et besoins</li>
+                <li>Enfants de 6 mois à 12 ans</li>
+            </ul>
+          </div>
+          <div class="service-image">
+            <img src="Snapi12.jpg" alt="baby-sitting" />
+          </div>
+        </article>
+
+        <article class="service modal-item bg-blue">
+          <div class="service-text">
+            <h2>Mise à disposition d’agents d’entretion</h2>
+            <p>Vous avez besoin d’un agent d’entretien régulier pour vos locaux, bureaux, immeubles ou résidences ? Clean Service met à votre disposition du personnel qualifié, formé et encadré.</p>
+            <ul>
+                <li>Contrats courts ou longs termes</li>
+                <li>Agents discrets et professionnels</li>
+                <li>Suivi qualité assuré par notre équipe</li>
+                <li>Horaires adaptés à votre activité</li>
+            </ul>
+        </div>
+          <div class="service-image">
+            <img src="Snapi4.jpg" alt="Mise à disposition" />
+          </div>
+        </article>
+
+        <article class="service modal-item bg-white reverse">
+          <div class="service-text">
+            <h2>Nettoyage de maisons</h2>
+            <p>Nous proposons un service complet de nettoyage pour les maisons : sols, vitres, murs, sanitaires, cuisines, etc. Que ce soit pour un nettoyage ponctuel ou régulier, nous assurons un travail soigné, rapide et efficace.</p>
+            <ul>
+                <li>Produits adaptés et non toxiques</li>
+                <li>Respect de vos objets personnels</li>
+                <li>Intervention discrète et professionnelle</li>
+            </ul>
+        </div>
+          <div class="service-image">
+            <img src="Snapi10.jpg" alt="Nettoyage de maisons" />
+          </div>
+        </article>
+
+                <article class="service modal-item bg-blue">
+          <div class="service-text">
+            <h2>Nettoyage de bureaux et commerces</h2>
+                <p>Maintenez un environnement de travail propre et agréable grâce à nos prestations adaptées aux bureaux, boutiques, hôtels, salons de coiffure, etc.</p>
+                    <ul>
+                        <li>Flexibilité (en dehors des heures de travail)</li>
+                        <li>Nettoyage de sols, vitres, meubles, équipements</li>
+                        <li>Tarifs adaptés aux professionnels</li>
+                    </ul>
+        </div>
+          <div class="service-image">
+            <img src="Snapi11.jpg" alt="Nettoyage de bureaux" />
+          </div>
+        </article>
+
+        <article class="service modal-item bg-white reverse">
+          <div class="service-text">
+            <h2>Services personnalisés</h2>
+            <p>Besoin d’un service spécifique ? Nous nous adaptons à vos demandes : désinfection, nettoyage haute pression, entretien extérieur, etc.</p>
+            <p>Contactez-nous pour un devis gratuit !</p>
+        </div>
+          <div class="service-image">
+            <img src="Snapi16.jpg" alt="Agents d'entretien" />
+          </div>
+        </article>
+
+      </div> <!-- .modal-services -->
+    </div> <!-- .modal__panel -->
+  </div> <!-- #services-modal -->
+
+  <script src="yolen.js"></script>
+</body>
+</html>
